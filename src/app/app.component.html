@@ -14,7 +14,10 @@
         <p *ngIf="showError" class="text-danger">
           Word limit exceeded! Maximum 10 words allowed.
         </p>
-        <p>word count:{{ getwordCount() }} / {{ maxWord }}</p>
+        <p>
+          word count:{{ getwordCount() }} / {{ maxWord }}
+          <fa-icon [icon]="faCoffee"></fa-icon>
+        </p>
       </div>
     </div>
   </div>

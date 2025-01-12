@@ -1,4 +1,5 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ export class AppComponent {
   text: string = '';
   maxWord: number = 10;
   showError: boolean = false;
+  faCoffee!: IconProp;
 
   getwordCount() {
     return this.text.split(/\s+/).filter((n) => n).length;
