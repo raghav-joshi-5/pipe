@@ -1,14 +1,21 @@
-<div class="container">
+<div class="container mt-5">
   <div class="row">
     <div class="col-md-4" *ngFor="let file of filterArr">
-      <div class="card">
-        <div class="card-body text-dark">
+      <div class="card mb-3">
+        <div class="card-body bg-dark text-white">
           <p>
-            <span></span>
+            <span>
+              <i [ngClass]="{
+                'fa-file-pdf text-danger':file.fileType.includes('pdf'),
+                'fa-file-excel text-success':file.fileType.includes('excel'),
+                'fa-file-word text-primary':file.fileType.includes('word')
+              }"
+               class="fa-solid fa-2x"></i>
+            </span>
             {{file.fileName}}
           </p>
           <p>
-            {{file.fileSize}}
+            {{file.fileSize | filesize}}
           </p>
         </div>
       </div>
