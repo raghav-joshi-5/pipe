@@ -35,4 +35,24 @@ export class AppComponent {
       this.showError = false;
     }
   }
+
+filterArr=[
+  {
+    fileName:'form 16',
+    fileType:'pdf',
+    fileSize:1234
+  },
+  {
+    fileName:'personal data',
+    fileType:'excel',
+    fileSize:1234
+  },
+  {
+    fileName:'personal info',
+    fileType:'word',
+    fileSize:1234
+  },
+]  
+
+
 }

@@ -1,4 +1,23 @@
-<div class="container mt-4">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let file of filterArr">
+      <div class="card">
+        <div class="card-body text-dark">
+          <p>
+            <span></span>
+            {{file.fileName}}
+          </p>
+          <p>
+            {{file.fileSize}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="container mt-4">
   <div class="row">
     <div class="col-12">
       <div class="form-group">
@@ -18,7 +37,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- <div class="container mt-5">
   <div class="row">
